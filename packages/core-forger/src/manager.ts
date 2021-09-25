@@ -210,10 +210,10 @@ export class ForgerManager {
         } else if (networkState.status === NetworkStateStatus.ColdStart) {
             this.logger.info("Skipping slot because of cold start. Will not forge.");
             return false;
-        //} else if (networkState.status === NetworkStateStatus.BelowMinimumPeers) {
-        //    this.logger.info("Network reach is not sufficient to get quorum. Will not forge.");
-        //    return false;
-        //}
+        } else if (networkState.status === NetworkStateStatus.BelowMinimumPeers) {
+            this.logger.info("Network reach is not sufficient to get quorum. Will not forge.");
+            return false;
+        }
 
         const overHeightBlockHeaders: Array<{
             [id: string]: any;
