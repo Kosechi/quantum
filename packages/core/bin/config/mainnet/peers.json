@@ -19,5 +19,5 @@
       "port": 4002
     }
   ],
-  "sources": []
+  "sources": ["https://raw.githubusercontent.com/Kosechi/peers/master/mainnet.json"]
 }
